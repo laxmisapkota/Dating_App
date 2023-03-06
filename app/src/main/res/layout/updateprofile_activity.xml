@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      android:paddingLeft="5dp"
+                      android:textSize="20dp"
+                      android:textColor="#000"
+                      android:text="@string/update_profile"/>
+            <ImageView
+                    android:id="@+id/IdProf"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/insert"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFF"/>
+            <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000"
+                    android:hint="Enter FullName"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#000"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="Gender"
+                      android:paddingLeft="5dp"
+                      android:textSize="20dp"
+                      android:textColor="#000"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup">
+
+                <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Male"
+                        android:layout_marginTop="2dp"
+                        android:checked="false"
+                        android:textSize="20dp"/>
+
+                <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Female"
+                        android:checked="false"
+                        android:textSize="20dp"/>
+            </RadioGroup>
+
+            <EditText
+                    android:id="@+id/phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000"
+                    android:hint="Enter Contact Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#000"/>
+
+            <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000"
+                    android:hint="Enter your address"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#000"/>
+
+            <EditText
+                    android:id="@+id/instagramid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000"
+                    android:hint="Enter Instagram Id"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#000"/>
+
+            <EditText
+                    android:id="@+id/facebookid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000"
+                    android:hint="Enter Facebook Id"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#000"/>
+
+
+            <Button
+                    android:id="@+id/updateprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Update profile"
+                    android:textColor="#fff"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

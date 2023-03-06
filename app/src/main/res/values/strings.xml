@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Prem Sambodhan</string>
+    <string name="login_name">login</string>
+    <string name="register_name">Register</string>
+    <string name="update_profile">Update your Profile</string>
+    <string name="home_name">Home</string>
+    <string name="logout_name">Logout</string>
+</resources>
